@@ -11,5 +11,9 @@ angularFormApp.controller('efController', function($scope, efService){
             'Finance',
             'Engineering',
             'Medical'
-        ]
+        ];
+        
+        $scope.submitForm = function (emp) {
+                console.log(emp)
+        }
 });
