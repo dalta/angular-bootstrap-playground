@@ -27,11 +27,10 @@
         <div class="form-group">
             <label for="industry" class="control-label col-sm-3">Industry</label>
             <div class="col-sm-9">
-                <select name="industry" id="industry" class="form-control" ng-model="employee.industry">
-                    <option>Teaching</option>
-                    <option>Finance</option>
-                    <option>Engineering</option>
-                    <option>Medical</option>
+                <select name="industry" id="industry" class="form-control"
+                        ng-model="employee.industry"
+                        ng-options="ind for ind in industryList"
+                >
                 </select>
             </div>
         </div>

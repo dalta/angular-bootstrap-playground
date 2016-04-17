@@ -6,4 +6,10 @@ angularFormApp.controller('efController', function($scope, efService){
 
         $scope.employee = efService.employee;
 
+        $scope.industryList = [
+            'Teaching',
+            'Finance',
+            'Engineering',
+            'Medical'
+        ]
 });

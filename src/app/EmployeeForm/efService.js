@@ -10,9 +10,9 @@ angularFormApp.factory('efService', function(){
             industry: 'Teaching',
             salary: 47890,
             institute: 'H.H. School',
-            city: 'Mumbai',
+            city: 'mum',
             perkCar: false,
-            perkFlat: false,
+            perkFlat: true,
             notes: 'This person is working as supervisor.'
         }
     }
