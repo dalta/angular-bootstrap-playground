@@ -2,7 +2,26 @@
  * Created by sibtain on 16/4/16.
  */
 
-var angularFormApp = angular.module('angularFormApp', []);
+var angularFormApp = angular.module('angularFormApp', [
+    'ngRoute'
+]);
+
+angularFormApp.config(['$routeProvider', configRoutes]);
+
+configRoutes = function($routeProvider){
+   $routeProvider
+       .when('/', {
+           templateUrl: 'app/Home/home.html',
+           controller: 'homeController'
+        })
+       .when('/newEmployeeForm',{
+           templateUrl: 'app/EmployeeForm/efTemplate.html',
+           controller: 'efController'
+       })
+       .otherwise({
+           redirectTo: '/'
+       });
+};
 
 //(function() {
 //
